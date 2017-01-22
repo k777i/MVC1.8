@@ -1,7 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: иван-дурма
- * Date: 22.01.2017
- * Time: 15:44
- */
+require __DIR__.'/models/photo.php';
+
+$items=Photo_getAll();
+
+require __DIR__.'/views/index.php';
