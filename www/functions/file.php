@@ -18,3 +18,5 @@ function File_upload($field){
 
     return false;
 }
+
+//var_dump(File_upload('image'));die;

@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form action="/www/add.php" method="post" enctype="multipart/form-data">
+    <form action="/mvc.loc/www/add.php" method="post" enctype="multipart/form-data">
         <label for="title">Название:</label>
         <input type="text" name="title"/>
         <lable for="image">Фото:</lable>
