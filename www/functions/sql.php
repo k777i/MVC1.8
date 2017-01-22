@@ -12,3 +12,8 @@ function sqlQuery($sql){
     }
     return $result;
 }
+
+function sqlExec($sql){
+    mysqli_query(sqlConnect(),$sql);
+
+}

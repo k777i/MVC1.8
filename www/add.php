@@ -1,5 +1,8 @@
 <?php
+require_once __DIR__.'/models/photo.php';
+
 require __DIR__.'/functions/file.php';
+
 
 if(!empty($_POST)) {
     $data = [];
@@ -13,7 +16,14 @@ if(!empty($_POST)) {
         }
     }
 
+    if(isset($data['title']) && isset($data['image'])){
+        Photo_insert($data);
+        header("Location: /");
+        die;
+
+    }
+
 }
 
-
 require_once __DIR__.'/views/add.php';
+

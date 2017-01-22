@@ -8,5 +8,8 @@ function Photo_getAll()
 }
 
 function Photo_insert($data){
-
+    $sql = "INSERT INTO
+            images (title,path)
+            VALUES ('".$data['title']."', '".$data['image']."')";
+    sqlExec($sql);
 }

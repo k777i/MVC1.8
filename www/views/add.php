@@ -6,10 +6,10 @@
 </head>
 <body>
 
-    <form action="/mvc.loc/www/add.php" method="post" enctype="multipart/form-data">
-        <label for="title">Название:</label>
+    <form action="/www/add.php" method="post" enctype="multipart/form-data">
+        <label>Название:</label>
         <input type="text" name="title"/>
-        <lable for="image">Фото:</lable>
+        <lable>Фото:</lable>
         <input type="file" name="image"/>
         <input type="submit" value="Добавить"/>
     </form>

@@ -8,10 +8,12 @@
 <table border="2">
     <tr>
         <th>Название</th>
+        <th>Фото</th>
     </tr>
     <?php foreach ($items as $value): ?>
         <tr>
             <td> <?php echo $value['title']; ?></td>
+            <td><img src="/www/<?php echo $value['path']; ?>" ></td>
         </tr>
     <?php endforeach; ?>
 

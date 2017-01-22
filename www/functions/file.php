@@ -4,7 +4,7 @@ function File_upload($field){
     if(empty($_FILES)){
         return false;
     }
-    if(0 !== $_FILES['error']){
+    if(0 != $_FILES['error']){
         return false;
     }
     if(is_uploaded_file($_FILES[$field]['tmp_name'])){
@@ -19,4 +19,3 @@ function File_upload($field){
     return false;
 }
 
-//var_dump(File_upload('image'));die;
