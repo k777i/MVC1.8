@@ -1,13 +1,11 @@
 <?php
 
 function sqlConnect(){
-    $connect = mysqli_connect("localhost", "root", "", "test_db");
-    return $connect;
+    return mysqli_connect("localhost", "root", "", "test_db");
 }
 
 function sqlQuery($sql){
-    $connect = sqlConnect();
-    $query = mysqli_query($connect, $sql);
+    $query = mysqli_query(sqlConnect(), $sql);
     $result = [];
     while($row = mysqli_fetch_assoc($query)){
         $result[]=$row;
